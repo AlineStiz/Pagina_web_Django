@@ -1,0 +1,38 @@
+{% load static %}
+
+<section id="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header">
+              <h3 class="section-title">Sobre Nossos Produtos</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="{% static 'img/product-features.png' %}" alt="" data-aos="fade-right">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+              {% for p in produtos %}
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+                <div class="icon"><i class="{{ p.icone }}"></i></div>
+                <h4 class="title"><a href="">{{ p.produto }}</a></h4>
+                <p class="description">{{ p.descricao }}</p>
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>

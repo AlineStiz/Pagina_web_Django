@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <!-- Home -->
+  {% include 'home.html' %}
+  <!-- End Home -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    {% include 'sobre_nos.html' %}
+    <!-- End About Section -->
+
+    <!-- ======= Featuress Section ======= -->
+    {% include 'produtos.html' %}
+    <!-- End Featuress Section -->
+
+    <!-- ======= Advanced Featuress Section ======= -->
+    <!-- End Advanced Featuress Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <!-- End Call To Action Section -->
+
+    <!-- ======= More Features Section ======= -->
+
+    <!-- End More Features Section -->
+
+    <!-- ======= Clients Section ======= -->
+
+   <!-- End Clients Section -->
+
+    <!-- ======= Pricing Section ======= -->
+
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    {% include 'perguntas_frequentes.html' %}
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    {% include 'equipe.html' %}
+    <!-- End Team Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    {% include 'galeria.html' %}
+    <!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    {% include 'contato.html' %}
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include 'rodape.html' %}
+  <!-- End  Footer -->
+
+  {% endblock %}

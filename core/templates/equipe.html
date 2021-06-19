@@ -1,0 +1,29 @@
+{% load static %}
+
+<section id="team" class="section" xmlns="http://www.w3.org/1999/html">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Equipe</h3>
+          <span class="section-divider"></span>
+          <p class="section-description"> </p>
+        </div>
+        <div class="row">
+          {% for f in funcionarios %}
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ f.imagem.thumbs.url }}" alt="{{ f.nome }}"></div>
+              <h4>{{ f.nome }}</h4>
+              <span>{{f.cargo }}</span>
+              <span>{{f.bio }}</span>
+              <div class="social">
+                <a href="{{ f.linkedin }}"><i class="bi bi-linkedin"></i></a>
+                <a href="{{ f.facebook }}"><i class="bi bi-facebook"></i></a>
+                <a href="{{ f.intagram }}"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>

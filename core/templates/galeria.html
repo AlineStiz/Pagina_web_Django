@@ -1,0 +1,23 @@
+{% load static %}
+
+<section id="gallery" class="section" >
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Galeria</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Alguns produtos já desenvolvidos por nós.</p>
+        </div>
+
+        <div class="row">
+          {% for g in galerias %}
+          <div class="row-cols-sm-auto col-lg-auto col-xs-auto">
+            <div class="gallery-item">
+                <img src="{{ g.imagem.thumbs.url }}" alt="{{ g.nome }}" >
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>

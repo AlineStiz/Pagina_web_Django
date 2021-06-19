@@ -1,0 +1,41 @@
+{% load static %}
+
+
+  <section id="hero">
+
+    <div class="hero-text" data-aos="zoom-out">
+      <h2>Bem-Vindo à POG Desenvolvimentos</h2>
+      <p>Somos uma equipe talentosa que desenvolve aplicativos com Flutter</p>
+
+      <div class="container">
+        {% if messages %}
+          {% for m in messages %}
+            <div class="alert alert-{{ m.tags }}">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <strong>{{ m }}</strong>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+    </div>
+
+
+
+    <div class="product-screens">
+
+      <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
+        <img src="{% static 'img/product-screen-1.png' %}" alt="">
+      </div>
+
+      <div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
+        <img src="{% static 'img/product-screen-2.png' %}" alt="">
+      </div>
+
+      <div class="product-screen-3" data-aos="fade-up">
+        <img src="{% static 'img/product-screen-3.png' %}" alt="">
+      </div>
+
+    </div>
+
+  </section>
