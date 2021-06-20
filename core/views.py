@@ -23,5 +23,5 @@ class IndexView(FormView):
         return super(IndexView, self).form_valid(form, *args, **kwargs)
 
     def form_invalid(self, form, *args, **kwargs):
-        messages.error(self.request, 'Erro ao enviar o e-mail!!')
+        messages.warning(self.request, 'Erro ao enviar o e-mail!!')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
