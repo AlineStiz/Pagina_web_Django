@@ -13,13 +13,13 @@ class ContatoForm(forms.Form):
         assunto = self.cleaned_data['assunto']
         mensagem = self.cleaned_data['mensagem']
 
-        conteudo = f'Nome: {nome}\nE-mail: {email}\nAssunto: {assunto}\nMensagem: {mensagem}'
+        conteudo = f'Nome: {nome}\n E-mail: {email}\n Assunto: {assunto}\n Mensagem: {mensagem}'
 
         mail = EmailMessage(
             subject=assunto,
             body=conteudo,
             from_email='contato@pog.com.br',
-            to=['contato@pog.com.br',],
-            headers={'Reply-To':email}
+            to=['contato@pog.com.br', ],
+            headers={'Reply-To': email}
         )
         mail.send()

@@ -17,4 +17,4 @@ class FuncionarioAdmin(admin.ModelAdmin):
 class GaleriaAdmin(admin.ModelAdmin):
     list_display = ('nome', 'imagem', 'ativo', 'modificado')
 
-#salvar(usar ctrl + S )
+
