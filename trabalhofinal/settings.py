@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'bd_trabalho_final',
         'USER': 'postgres',
         'PASSWORD': '99290273',
-        'HOST': 'localhost',  # se o banco estiver em outro pc, deve-se informar o IP aqui
+        'HOST': 'localhost',
         'PORT': 5432,
     }
 }
@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #mudou de mediafiles para media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
